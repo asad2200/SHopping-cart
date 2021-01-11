@@ -11,7 +11,6 @@ function App() {
     const [cartItem, setCartItem] = useState([]);
 
     const addInCart = item => {
-        //Todo: check if any error accur
         const isAlreadyAdded = cartItem.findIndex(array => {
             return array.id === item.id;
         });

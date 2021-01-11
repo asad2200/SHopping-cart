@@ -4,6 +4,7 @@ import {random, commerce} from "faker";
 import {Container, Col, Row} from "reactstrap";
 import CartItem from "./CartItem";
 
+//copy data from shoppingcart.txt and paste in jsonware.com to host data
 const url = "https://jsonware.com/json/7f26bf2c0233a09ad8426b4e6ad9ccbd.json";
 const BuyPage = ({addInCart}) => {
     const [product, setProduct] = useState([]);
@@ -25,7 +26,6 @@ const BuyPage = ({addInCart}) => {
         setProduct(allProducts);
     };
 
-    //TODO change method here after completing project
     useEffect(() => {
         fetchPhotos();
     }, []);
